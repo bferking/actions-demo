@@ -20,3 +20,4 @@ jobs:
 
     - name: Build
       run: dotnet build
+      working-directory: demo-app/
