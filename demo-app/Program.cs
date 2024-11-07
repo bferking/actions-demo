@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace demo_app;
+﻿namespace demo_app;
 
 // See https://aka.ms/new-console-template for more information
 
