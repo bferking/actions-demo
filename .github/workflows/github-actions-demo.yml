@@ -21,3 +21,7 @@ jobs:
     - name: Build
       run: dotnet build
       working-directory: demo-app/
+      
+    - name: Test
+      run: dotnet test
+      working-directory: demo-app-tests/
