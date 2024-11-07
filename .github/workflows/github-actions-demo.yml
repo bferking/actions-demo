@@ -21,7 +21,20 @@ jobs:
     - name: Build
       run: dotnet build
       working-directory: demo-app/
-      
-    - name: Test
-      run: dotnet test
-      working-directory: demo-app-tests/
+  
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install .NET Core
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Test
+        run: dotnet test
+        working-directory: demo-app-tests/
