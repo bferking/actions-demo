@@ -7,7 +7,7 @@ namespace demo_app;
 public class Program
 {
     public static void Main()
-        {
- Console.WriteLine("Hello, from the demo app!");
-}
+    {
+        Console.WriteLine("Hello, from the demo app!");
+    }
 }
