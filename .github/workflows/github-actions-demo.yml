@@ -62,7 +62,7 @@ jobs:
   package:
     needs: [build, test]
     runs-on: ubuntu-latest
-    ennvironment:
+    environment:
       name: manual-approval
     steps:
       - name: Checkout
