@@ -62,6 +62,8 @@ jobs:
   package:
     needs: [build, test]
     runs-on: ubuntu-latest
+    ennvironment:
+      name: manual-approval
     steps:
       - name: Checkout
         uses: actions/checkout@v4
